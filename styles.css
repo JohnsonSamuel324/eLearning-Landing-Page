@@ -35,6 +35,7 @@ p {
 .get-started {
     padding: 1rem 1.75rem;
     background-color: #13183f;
+    font-size: 1rem;
     color: white;
     font-weight: bolder;
     border: 0;
