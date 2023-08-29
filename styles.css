@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-main, body header {
+body header {
     padding: 0 1rem;
+}
+
+body {
+    background-color: white;
 }
 
 main {
@@ -12,6 +17,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    color: #83869a;
 }
 
 .top-bar {
@@ -41,6 +50,14 @@ main {
 }
 
 /* Header */
+header * {
+    margin: 1rem 0;
+}
+
+#main-header {
+    font-size: 2rem;
+}
+
 #mid-get-started {
     /* First time learning linear gradient. COOL! */
     /* linear-gradient(*top color*, *bottom color*) */
@@ -49,24 +66,48 @@ main {
 
 /* Hero */
 .hero-image {
-    transform: scale(.85);
+    transform: scale(1);
+    max-width: 100%;
 }
 
 /* Classes section */
 #classes-section header {
     background-image: linear-gradient(#ff6f48, #f02aa6);
     color: white;
-    height: 5rem;
+    height: 7rem;
     display: flex;
     text-align: center;
     align-items: center;
+    text-align: left;
+    margin: -1rem 1rem 0 1rem;
+}
+
+#classes-section header * {
+    width: 75%;
+    padding-left: .5rem;
+    padding-bottom: 1rem;
+}
+
+#classes-section {
+    padding: 0;
+    background-color: #FBFBFF;
+    /* background-color: blue; */
 }
 
 /* Class cards */
 .class-card {
-    background-color: white;
-    margin-top: 2rem;
+    background-color: #ffffff;
+    margin: 2rem 1rem 0rem 1rem;
 }
-#classes-section {
-    background-color: #83869a;
+
+.class-card * {
+    margin: 1rem 2rem;
+}
+
+.card-get-started {
+    border: 0;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #f74780;
+    font-weight: bold;
 }
