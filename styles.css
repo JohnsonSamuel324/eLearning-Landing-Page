@@ -4,12 +4,8 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-body header {
-    padding: 0 1rem;
-}
-
 body {
-    background-color: white;
+    background-image: linear-gradient(#ffffff, #f0f1ff);
 }
 
 main {
@@ -23,10 +19,9 @@ p {
     color: #83869a;
 }
 
-.top-bar {
+.nav-footer {
     display: flex;
     flex-direction: row;
-    height: 10%;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -45,13 +40,13 @@ p {
     border: 0;
 }
 
-#top-get-started {
+#top-get-started, #footer-get-started {
     margin-right: 1rem;
 }
 
 /* Header */
 header * {
-    margin: 1rem 0;
+    margin: 1rem 1rem;
 }
 
 #main-header {
@@ -62,6 +57,7 @@ header * {
     /* First time learning linear gradient. COOL! */
     /* linear-gradient(*top color*, *bottom color*) */
     background-image: linear-gradient(#ff6f48, #f02aa6);
+    padding: 1rem 3rem;
 }
 
 /* Hero */
@@ -90,8 +86,6 @@ header * {
 
 #classes-section {
     padding: 0;
-    background-color: #FBFBFF;
-    /* background-color: blue; */
 }
 
 /* Class cards */
@@ -110,4 +104,17 @@ header * {
     font-size: 1rem;
     color: #f74780;
     font-weight: bold;
+}
+
+#business-class {
+    margin-bottom: 4rem;
+}
+
+#footer {
+    background-color: #13183f;
+    padding: 2rem 0;
+}
+
+#footer-get-started {
+    background-image: linear-gradient(#4851ff, #f02aa6);
 }
