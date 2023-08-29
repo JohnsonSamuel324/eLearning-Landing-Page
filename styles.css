@@ -46,11 +46,11 @@ p {
 }
 
 /* Header */
-header * {
+.main-header *:not(.hero-image, picture) {
     margin: 1rem 1rem;
 }
 
-#main-header {
+#main-header-text {
     font-size: 2rem;
 }
 
@@ -123,4 +123,26 @@ header * {
 
 #footer-get-started {
     background-image: linear-gradient(#4851ff, #f02aa6);
+}
+
+@media (min-width: 768px) {
+    .main-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .main-header > div {
+        height: 200px;
+    }
+    .header-content {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    .hero-image {
+        content: url("./starter-code/assets/image-hero-tablet.webp");
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        height: 100%;
+    }
 }
