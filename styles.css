@@ -98,6 +98,9 @@ header * {
 .class-card * {
     margin: 1rem 2rem;
 }
+.class-card p {
+    margin: 1rem 2rem 2rem 2rem;
+}
 
 .card-get-started {
     border: 0;
@@ -105,12 +108,14 @@ header * {
     font-size: 1rem;
     color: #f74780;
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 #business-class {
     margin-bottom: 4rem;
 }
 
+/* Footer */
 #footer {
     background-color: #13183f;
     padding: 2rem 0;
